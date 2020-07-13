@@ -1,0 +1,9 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php
+
+php_value error_log /home/f0454640/domains/f0454640.xsph.ru/php_errors.log
+
